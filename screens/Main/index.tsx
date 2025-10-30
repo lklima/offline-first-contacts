@@ -1,7 +1,6 @@
 import { Entypo, Octicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useRef } from "react";
 import { Text, TextInput, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -15,20 +14,6 @@ import { ContactList } from "@/components/ContactList";
 
 export const Main = () => {
   const { top, bottom } = useSafeAreaInsets();
-  const isSyncing = useRef(false);
-
-  // useEffect(() => {
-  //   const unsubscribe = NetInfo.addEventListener(async (state) => {
-  //     if (state.isConnected) {
-  //       if (!isSyncing.current) {
-  //         isSyncing.current = true;
-  //         await syncFireMelon(database, { chats: {} }, firestore, "user_1");
-  //         isSyncing.current = false;
-  //       }
-  //     }
-  //   });
-  //   return () => unsubscribe();
-  // }, []);
 
   return (
     <View style={styles.container}>
