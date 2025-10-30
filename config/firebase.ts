@@ -1,3 +1,4 @@
+// exposed keys for demo purposes
 export const firebaseConfig = {
   apiKey: "AIzaSyA9J0Tngp5HexHGGi-3MDwAB6anUrD8HbY",
   authDomain: "offline-first-chat-f7882.firebaseapp.com",
